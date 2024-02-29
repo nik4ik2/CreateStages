@@ -81,6 +81,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ad_astra:desh_fluid_pipe' });
   event.remove({ output: 'createaddition:portable_energy_interface' });
   event.remove({ output: 'mekanism:digital_miner' });
+  event.remove({ output: 'createaddition:electric_motor' });
+  event.remove({ output: 'createaddition:alternator' });
   
   event.remove({ input: 'immersiveengineering:hammer' });
   
