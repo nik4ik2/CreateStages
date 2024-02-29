@@ -1,0 +1,11 @@
+{
+	"block.immersiveengineering.conveyor_dropper": "§4Используйте конвейерную ленту из Create!",
+	"block.immersiveengineering.conveyor_redstone": "§4Используйте конвейерную ленту из Create!",
+	"block.immersiveengineering.conveyor_extract": "§4Используйте конвейерную ленту из Create!",
+	"block.immersiveengineering.conveyor_splitter": "§4Используйте конвейерную ленту из Create!",
+	"block.immersiveengineering.conveyor_vertical": "§4Используйте конвейерную ленту из Create!",
+	"block.immersiveengineering.charging_station": "§4Используйте катушку теслы из Create!",
+	"item.immersiveengineering.plate_copper": "§4Аналог есть в Create!",
+	"block.immersiveengineering.thermoelectric_generator": "§4Этот предмет запрещен!",
+	"item.immersiveengineering.glider": "§4Этот предмет запрещен!"
+}
