@@ -25,13 +25,13 @@ ServerEvents.recipes(event => {
   event.remove({ not: { type: 'createaddition:rolling' }, output: 'createaddition:gold_wire' });
   event.remove({ not: { type: 'createaddition:rolling' }, output: 'createaddition:iron_wire' });
   event.remove({ not: { type: 'create:pressing' }, output: 'immersiveengineering:plate_duroplast' });
-  event.remove({ output: 'createaddition:gold_rod', type: 'createaddition:rolling' })
-  event.remove({ output: 'createaddition:brass_rod', type: 'createaddition:rolling' })
-  event.remove({ output: 'createaddition:copper_rod', type: 'createaddition:rolling' })
-  event.remove({ output: 'immersiveengineering:stick_aluminum', type: 'createaddition:rolling' })
-  event.remove({ output: 'immersiveengineering:stick_steel', type: 'createaddition:rolling' })
-  event.remove({ output: 'immersiveengineering:stick_iron', type: 'createaddition:rolling' })
-  event.remove({ output: 'createaddition:electrum_rod', type: 'createaddition:rolling' })
+  event.remove({ output: 'createaddition:gold_rod', type: 'createaddition:rolling' });
+  event.remove({ output: 'createaddition:brass_rod', type: 'createaddition:rolling' });
+  event.remove({ output: 'createaddition:copper_rod', type: 'createaddition:rolling' });
+  event.remove({ output: 'immersiveengineering:stick_aluminum', type: 'createaddition:rolling' });
+  event.remove({ output: 'immersiveengineering:stick_steel', type: 'createaddition:rolling' });
+  event.remove({ output: 'immersiveengineering:stick_iron', type: 'createaddition:rolling' });
+  event.remove({ output: 'createaddition:electrum_rod', type: 'createaddition:rolling' });
   event.remove({ output: 'createaddition:copper_spool' });
   event.remove({ output: 'createaddition:gold_spool' });
   event.remove({ output: 'createaddition:electrum_spool' });

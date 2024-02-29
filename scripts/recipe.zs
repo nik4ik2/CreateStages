@@ -70,3 +70,5 @@ craftingTable.remove(<item:immersiveengineering:stick_aluminum>);
 
 <recipetype:create:splashing>.removeByInput(<item:minecraft:gravel>);
 <recipetype:create:splashing>.addRecipe("splashing_flint", [<item:minecraft:flint> % 25], <item:minecraft:gravel>, 200);
+
+<recipetype:immersiveengineering:alloy>.remove(<item:create:brass_ingot>);
