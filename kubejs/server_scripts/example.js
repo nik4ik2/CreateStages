@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'mekanism:digital_miner' });
   event.remove({ output: 'createaddition:electric_motor' });
   event.remove({ output: 'createaddition:alternator' });
+  event.remove({ output: 'createaddition:tesla_coil' });
   
   event.remove({ input: 'immersiveengineering:hammer' });
   
