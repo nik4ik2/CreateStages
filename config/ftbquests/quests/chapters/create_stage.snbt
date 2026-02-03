@@ -1,0 +1,723 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_stage"
+	group: ""
+	id: "5D074CF6D13F6B87"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "create:wrench"
+			id: "6BD26DF880308685"
+			rewards: [{
+				command: "/gamestage add @s beginning"
+				icon: "create:wrench"
+				id: "2B244A562A00B068"
+				title: "Начало"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "568ACB06262549DC"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "17EB295664B9B135"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "6C5F9E169D1BEA72"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "7A8E3AD2E5BF7E6C"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "Начало"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6BD26DF880308685"]
+			icon: "create:cogwheel"
+			id: "3FA71CB58EEF2DB2"
+			rewards: [{
+				command: "gamestage add @s industrial_age"
+				elevate_perms: true
+				icon: "create_connected:crank_wheel"
+				id: "1E7F3211CA1ED071"
+				title: "Индустриальная эпоха"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "66616211CEF23AA9"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Индустриальная эпоха"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3FA71CB58EEF2DB2"]
+			icon: "create:steam_engine"
+			id: "0B82CDDB188629B8"
+			rewards: [{
+				command: "/gamestage add @s steam_punk"
+				elevate_perms: true
+				icon: "create:steam_engine"
+				id: "30D186395D0817B9"
+				title: "Стим панк"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "7CA18C3A6D24FB6A"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Стим панк"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B82CDDB188629B8"]
+			icon: "tfmg:radial_engine"
+			id: "68AE96C649270CF1"
+			rewards: [{
+				command: "/gamestage add @s diesel_punk"
+				elevate_perms: true
+				icon: "tfmg:radial_engine"
+				id: "0B3D3A90DE705908"
+				title: "Дизель панк"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "767FCB396B093A52"
+				item: "tfmg:crude_oil_bucket"
+				type: "item"
+			}]
+			title: "Дизель панк"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68AE96C649270CF1"]
+			icon: "tfmg:electric_motor"
+			id: "3DF222D5F6CCE22F"
+			rewards: [{
+				command: "/gamestage add @s electricity"
+				elevate_perms: true
+				icon: "tfmg:electric_motor"
+				id: "11F0E4D089A92EBF"
+				title: "Электричество"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "4F8F0BE0FAE091F5"
+				item: { Count: 64, id: "tfmg:magnetic_alloy_ingot" }
+				type: "item"
+			}]
+			title: "Электричество"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3DF222D5F6CCE22F"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "3EBB5FE9777DEB85"
+			rewards: [{
+				command: "/gamestage add @s space_age"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				id: "1602AC8E2D0E2B8B"
+				title: "Космос"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "4D90C224966EA0F5"
+					item: { Count: 64, id: "tfmg:plastic_sheet" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "7E73A83EE2F88DFB"
+					item: { Count: 64, id: "tfmg:circuit_board" }
+					type: "item"
+				}
+			]
+			title: "Космос"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3EBB5FE9777DEB85"]
+			icon: {
+				Count: 1
+				id: "mekanism:basic_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "4000000"
+						}]
+					}
+				}
+			}
+			id: "1B7FAF8233A99CBB"
+			rewards: [{
+				command: "/gamestage add @s modern_age"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "mekanism:basic_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "4000000"
+							}]
+						}
+					}
+				}
+				id: "3B266E23FD5CE0F9"
+				title: "Мека"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "3BEA14BE2DA262F1"
+					item: { Count: 64, id: "ad_astra:desh_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "1C90403D958AF207"
+					item: { Count: 64, id: "ad_astra:ostrum_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "508EA21880F22C06"
+					item: { Count: 64, id: "ad_astra:calorite_ingot" }
+					type: "item"
+				}
+			]
+			title: "Мека"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B7FAF8233A99CBB"]
+			icon: "mekanismgenerators:wind_generator"
+			id: "2B64CD5B16A6A928"
+			rewards: [{
+				command: "/gamestage add @s new_age"
+				elevate_perms: true
+				icon: "mekanismgenerators:wind_generator"
+				id: "4E707E59966F031B"
+				title: "Мека генераторы"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "6C36FAB0CABCFA46"
+				item: { Count: 16, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			title: "Мека генераторы"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2B64CD5B16A6A928"]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "5F2CD27257E4BBF9"
+			rewards: [{
+				command: "/gamestage add @s nuclear"
+				elevate_perms: true
+				icon: "mekanismgenerators:fission_fuel_assembly"
+				id: "067D5B87D67787FA"
+				title: "Ядерный реактор"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "738AB1F9F6FFC518"
+				item: { Count: 64, id: "mekanism:yellow_cake_uranium" }
+				type: "item"
+			}]
+			title: "Ядерный реактор"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["5F2CD27257E4BBF9"]
+			icon: "mekanismgenerators:fusion_reactor_logic_adapter"
+			id: "473CDD4EF23BB320"
+			rewards: [{
+				command: "/gamestage add _nik4ik_ thermonuclear"
+				elevate_perms: true
+				icon: "mekanismgenerators:fusion_reactor_logic_adapter"
+				id: "30CB7F3DFF40C5CE"
+				title: "Термоядерный реактор"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "7AC6A8DA32C62271"
+				item: { Count: 3, id: "mekanismgenerators:fusion_fuel_bucket" }
+				type: "item"
+			}]
+			title: "Термоядерный реактор"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["473CDD4EF23BB320"]
+			id: "3C6FD44E07A1B374"
+			rewards: [{
+				command: "/gamestage add @s ending"
+				elevate_perms: true
+				icon: "mekanism:digital_miner"
+				id: "3E22CD127B39AA56"
+				title: "Шизофрения"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "1430172E6B35B2E5"
+					item: { Count: 64, id: "minecraft:cake" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "1BED3DFB2254C438"
+					item: { Count: 64, id: "createaddition:honey_cake" }
+					type: "item"
+				}
+			]
+			title: "Шизофрения"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3FA71CB58EEF2DB2"]
+			icon: "ironchest:trapped_crystal_chest"
+			id: "5CDF7D639553753D"
+			rewards: [{
+				command: "/gamestage add @s ironchest"
+				elevate_perms: true
+				icon: "ironchest:crystal_chest"
+				id: "0FBD9F2CC31EA660"
+				title: "Iron Chest"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					id: "1FBCB525ED85801C"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2526B81892A29A3C"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6DAC2BEE6EEA751B"
+					item: "minecraft:trapped_chest"
+					type: "item"
+				}
+			]
+			title: "Iron Chest"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5CDF7D639553753D"
+				"68AE96C649270CF1"
+			]
+			icon: "storagedrawers:oak_full_drawers_1"
+			id: "11365F5BC63083FC"
+			rewards: [{
+				command: "/gamestage add @s drawers"
+				elevate_perms: true
+				icon: "storagedrawers:oak_full_drawers_1"
+				id: "61B4E5C7095D20A1"
+				title: "Drawers"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				id: "01CAE0C9F9278AA2"
+				item: "ironchest:crystal_chest"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"11365F5BC63083FC"
+				"3EBB5FE9777DEB85"
+			]
+			icon: {
+				Count: 1
+				id: "ae2:portable_item_cell_256k"
+				tag: { }
+			}
+			id: "4FB8AECD3116FD5B"
+			rewards: [{
+				command: "/gamestage add @s applied"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "ae2:portable_item_cell_256k"
+					tag: { }
+				}
+				id: "1AED8ED7F96787FF"
+				title: "AE2"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "235F98A80D2A1B0D"
+				item: { Count: 32, id: "ad_astra:cheese" }
+				type: "item"
+			}]
+			title: "AE2"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["11365F5BC63083FC"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "475D9D77E3463106"
+			rewards: [{
+				command: "/gamestage add @s backpack"
+				elevate_perms: true
+				icon: "sophisticatedbackpacks:backpack"
+				id: "03B067835E5C34A3"
+				title: "Рюкзачки"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "644C5D7C1A1F7D89"
+				item: { Count: 64, id: "minecraft:leather" }
+				type: "item"
+			}]
+			title: "Рюкзачки"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3FA71CB58EEF2DB2"]
+			icon: "farmersdelight:stove"
+			id: "1CE7EBB895219F4F"
+			rewards: [{
+				command: "/gamestage add @s farmersdelight"
+				elevate_perms: true
+				icon: "farmersdelight:stove"
+				id: "08C782A489FB8803"
+				title: "Farmers Delight"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "373B7E845213BD42"
+				item: { Count: 64, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			title: "Farmers Delight"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1CE7EBB895219F4F"]
+			icon: "nethersdelight:blackstone_stove"
+			id: "13E87490D2FE059C"
+			rewards: [{
+				command: "/gamestage add @s nethers_delight"
+				elevate_perms: true
+				icon: "nethersdelight:blackstone_stove"
+				id: "1F6DEA4EF82CBF2D"
+				title: "Nether Delight"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "218E910C607DD314"
+				item: { Count: 16, id: "minecraft:nether_wart" }
+				type: "item"
+			}]
+			title: "Nether Delight"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["13E87490D2FE059C"]
+			icon: "ends_delight:end_stove"
+			id: "6632CE84DA6BBA47"
+			rewards: [{
+				command: "/gamestage add @s ends_delight"
+				icon: "ends_delight:end_stove"
+				id: "31C3222087E8EBBC"
+				title: "Ends Delight"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "308505CAC28778A4"
+				item: { Count: 64, id: "minecraft:popped_chorus_fruit" }
+				type: "item"
+			}]
+			title: "Ends Delight"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1CE7EBB895219F4F"]
+			icon: "vinery:red_grapejuice"
+			id: "4A7303892DE3066F"
+			rewards: [{
+				command: "/gamestage add @s vinery"
+				icon: "vinery:red_grapejuice"
+				id: "704F730E5BD5EBBD"
+				title: "Вино"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "57C8ABE409573D54"
+					item: { Count: 64, id: "minecraft:apple" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "55B1468DEF7DDAA4"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+			]
+			title: "Вино"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B82CDDB188629B8"]
+			icon: "create_connected:encased_chain_cogwheel"
+			id: "4BA1DBF55AB86688"
+			rewards: [{
+				command: "/gamestage add @s create_plus"
+				elevate_perms: true
+				icon: "create_connected:encased_chain_cogwheel"
+				id: "66953578CB918527"
+				title: "Create Connected"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "407CB89A03588B37"
+				item: { Count: 64, id: "create:copper_sheet" }
+				type: "item"
+			}]
+			title: "Create Connected"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["68AE96C649270CF1"]
+			icon: "railways:track_acacia"
+			id: "5886FD11DB79FBC9"
+			rewards: [{
+				command: "/gamestage add @s rail_age"
+				elevate_perms: true
+				icon: "railways:track_acacia"
+				id: "2E6FC7B193F40FF3"
+				title: "Поезда"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "7FA9F521985826A3"
+				item: { Count: 64, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			title: "Поезда"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5886FD11DB79FBC9"]
+			icon: {
+				Count: 1
+				id: "createbigcannons:solid_shot"
+				tag: { }
+			}
+			id: "4D5F9AACC7CC45DD"
+			rewards: [{
+				command: "/gamestage add @s gun_age"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "createbigcannons:solid_shot"
+					tag: { }
+				}
+				id: "0E32455434A7A602"
+				title: "Big Cannons"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "03B47481951CBE62"
+				item: { Count: 64, id: "minecraft:gunpowder" }
+				type: "item"
+			}]
+			title: "Big Cannons"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3DF222D5F6CCE22F"]
+			icon: {
+				Count: 1
+				id: "tfmg:advanced_potato_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A22BDDF8806B63C"
+			rewards: [{
+				command: "/gamestage add @s tfmg_gun"
+				elevate_perms: true
+				icon: {
+					Count: 1
+					id: "tfmg:advanced_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3833588276B206DF"
+				title: "Пушки, огнеметы и веселье"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				id: "74BBF41F3A5B3F49"
+				item: "tfmg:napalm_bucket"
+				type: "item"
+			}]
+			title: "Пушки, огнеметы и веселье"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3EBB5FE9777DEB85"]
+			icon: "computercraft:computer_advanced"
+			id: "7360A7C11ECC73C3"
+			rewards: [{
+				command: "/gamestage add @s computers"
+				elevate_perms: true
+				icon: "computercraft:computer_advanced"
+				id: "6B84F580DD1C5CFA"
+				title: "Компьютеры"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "424EB6D05C1721ED"
+				item: { Count: 16, id: "tfmg:transistor_item" }
+				type: "item"
+			}]
+			title: "Компьютеры"
+			x: -2.0d
+			y: 5.5d
+		}
+	]
+	title: "Create Stage"
+}

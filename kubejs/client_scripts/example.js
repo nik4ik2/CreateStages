@@ -1,7 +1,6 @@
-ClientEvents.lang('ru_ru', e => {
-  const rename = (item, newName) => e.add(Item.of(item).item.getDescriptionId(), newName)
+// priority: 0
 
-  rename('minecraft:elytra', "§4Этот предмет запрещен!")
-});
+// Visit the wiki for more info - https://kubejs.com/
 
+console.info('Hello, World! (Loaded client scripts)')
 
