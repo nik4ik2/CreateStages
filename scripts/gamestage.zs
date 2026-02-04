@@ -479,6 +479,11 @@ mods.recipestages.Recipes.setRecipeStageByMod("rail_age", "railways");
 ItemStages.createModRestriction("railways", "rail_age").preventPickup(false).setHiddenInJEI(true).preventInventory(false);
 
 
+mods.recipestages.Recipes.setRecipeStageByMod("enchant", "create_enchantment_industry");
+
+ItemStages.createModRestriction("create_enchantment_industry", "enchant").preventPickup(false).setHiddenInJEI(true).preventInventory(false);
+
+
 val rail_age = [
 	<item:create:track>,
 	<item:create:railway_casing>,
