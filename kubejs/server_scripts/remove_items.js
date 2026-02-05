@@ -61,6 +61,12 @@ const SOPHISTICATED_UPGRADES = [
 ];
 
 LootJS.modifiers(event => {
+  event
+    .addLootTableModifier(/minecraft:chests\/.*/)
+    .removeLoot(SOPHISTICATED_UPGRADES)
+})
+
+LootJS.modifiers(event => {
   event.addEntityLootModifier("minecraft:mooshroom")
     .randomChance(0.5)
     .addLoot("createaddition:honey_cake")
